@@ -1,0 +1,514 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body {
+   
+    width:100%;
+height :1000px;
+    overflow-x: hidden;
+  }
+
+
+/* 网站首页表格 */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px auto 80px;
+}
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+.main {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    font-size: 18px;
+    margin-right: 900px;
+    margin-left: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    margin-top: 50px;
+    z-index: 999;
+}
+.sidebar {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+.footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+.名字{
+font-size: 32px;
+}
+.item sidebar{
+    width: 1425px;
+}
+.section{
+    position :relative;
+    width:100%;
+    height: 100vh;
+    overflow:hidden;
+    z-index: -999;
+}
+section::before
+{
+    content:"";
+    position:absolute;
+    top:0;
+    left :0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.scroll{
+    position:absolute;
+    width:calc(100%+400px);
+    left: -400px;
+    display:flex;
+    color:#ccc;
+    z-index: -999;
+    margin-top: 350px;
+}
+.scroll div{
+    position:absolute;
+    background:#ccc;
+    color:black;
+    font-size: 32em;
+    text-transform: uppercase;
+    letter-spacing:0.2em;
+    white-space:nowrap;
+    animation: animate 60s linear infinite ;
+animation-delay: -60s;
+font-weight: 600;
+z-index: -999;
+}
+.scroll div :nth-child(2)
+{
+    animation: animate-two 60s linear infinite ;
+    animation-delay: -30s;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+} */
+
+
+
+/* 作品项目展示页面 */
+
+
+.myban{
+    width:1430px;
+    height:300px;
+    border :0px solid #ccc;
+	margin-left: 5px;
+   
+}
+.myban img{
+    position: relative;
+    width:470px;
+    height:350px;
+}
+
+:root {
+    --mag: #ccc;
+    --grey: #ccc;
+    --dgrey: #2e2d2c;
+    --wht: #eee
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    background-color: var(--mag)!important
+}
+
+a {
+    background-color: transparent
+}
+
+.logo  {
+	margin-top: -900px;
+    z-index: 999;
+    position:fixed;
+}
+
+
+
+.index img{
+    width :800px;
+    height: 500px;
+    margin-right: 20px;
+    margin-left: 600px;
+    margin-bottom: 100px;
+    margin-top: 5px;
+}
+
+.index个人介绍 {
+    font-size: 48px;
+    margin-right: 50px;
+    margin-left: 300px;
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f0f;
+}
+
+
+
+
+
+
+
+
+
+.ins{
+    text-align: right;
+}
+.myban2{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+/* 第一行项目作品 */
+
+  
+  #container {
+	  margin-left: 5px;
+    position: absolute;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 1420px;
+    height: 200px;
+    border: 1px solid #ccc;
+    display: -webkit-flex;
+    -webkit-flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    contain: strict;
+  }
+  
+
+  
+  .text1{
+    width :445px;
+    height:200px;
+    border:1px solid #ccc;
+    background-color: #ccc;
+    margin-right: 20px;
+    position:static ;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    font-family: Helvetica,sans-serif;
+    clear: both;
+    font-weight: 600;
+    color: var(--dgrey);
+    text-shadow:0 0 3px #2e2d2c;
+	overflow-y: hidden;
+    resize: none;
+    outline: none;
+    margin-left: 3px;
+}
+.text1:link  {
+    color :#2e2d2c
+ }
+ .text1:hover {
+     color:#f0f
+    
+ }
+ .text1:hover {
+     cursor:pointer;
+ }
+
+
+.text2{
+    width :440px;
+    height:200px;
+    border:1px solid #ccc;
+    background-color: #ccc;
+    margin-right: 6px;
+    position:static ;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    font-family: Helvetica,sans-serif;
+    clear: both;
+    font-weight: 600;
+    color: var(--dgrey);
+    text-shadow:0 0 3px #2e2d2c;
+    resize: none;
+    outline: none;
+    margin-left: 0px;
+}
+.text2:hover{
+    opacity: o.5;
+}
+.text2:link  {
+    color :#2e2d2c
+ }
+ .text2:hover {
+     color:#f0f
+    
+ }
+ .text2:hover {
+     cursor:pointer;
+ }
+
+a{
+    text-decoration: none;
+    margin:0 auto;
+    display: block;
+    width:600px;
+}
+.text3{
+    width :440px;
+    height:200px;
+    border:1px solid #ccc;
+    background-color: #ccc;
+    margin-right: 6px;
+    position:static ;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    font-family: Helvetica,sans-serif;
+    clear: both;
+    font-weight: 600;
+    color: var(--dgrey);
+    text-shadow:0 0 3px #2e2d2c;
+    resize: none;
+    outline: none;
+    margin-left: 3px;
+}
+.text3:link  {
+    color :#2e2d2c
+ }
+ .text3:hover {
+     color:#f0f
+    
+ }
+ .text3:hover {
+     cursor:pointer;
+ }
+.sul{
+	margin-top: 300px;
+	width: 1920px;
+	height: 350px
+}
+
+
+/* 第二行标题 */
+.标题2 {
+    color: #2e2d2c;
+    text-align:center;
+    font-size: 32px ;
+    font-family: Helvetica,sans-serif;
+    clear: both;
+    font-weight: 600;
+   text-shadow:0 0 3px #2e2d2c;
+	margin: 300px auto 0;
+}
+.标题1 {
+    color: #2e2d2c;
+    text-align:center;
+    font-size: 32px ;
+    font-family: Helvetica,sans-serif;
+    clear: both;
+    font-weight: 600;
+   text-shadow:0 0 3px #2e2d2c;
+   margin: -150px auto 0;
+}
+/* 第二行项目作品 */
+.myban2{
+    width:1430px;
+    height:300px;
+    border :0px solid #ccc;
+   
+}
+.myban2 img{
+    position: relative;
+    width:470px;
+    height:350px;
+    margin-left: 3px;
+}
+/* 第二行项目作品 */
+.text4{
+    width :445px;
+    height:200px;
+    border:1px solid #ccc;
+    background-color: #ccc;
+    margin-right: 35px;
+    position:static ;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    font-family: Helvetica,sans-serif;
+    clear: both;
+    font-weight: 600;
+    color: var(--dgrey);
+    text-shadow:0 0 3px #2e2d2c;
+	overflow-y: hidden;
+    resize: none;
+    outline: none;
+    margin-left: 3px;
+}
+.text4:link  {
+    color :#2e2d2c
+ }
+ .text4:hover {
+     color:#f0f
+    
+ }
+ .text4:hover {
+     cursor:pointer;
+ }
+
+
+.text5{
+    width :440px;
+    height:200px;
+    border:1px solid #ccc;
+    background-color: #ccc;
+    margin-right: 6px;
+    position:static ;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    font-family: Helvetica,sans-serif;
+    clear: both;
+    font-weight: 600;
+    color: var(--dgrey);
+    text-shadow:0 0 3px #2e2d2c;
+    resize: none;
+    outline: none;
+    margin-left: 3px;
+}
+.text5:hover{
+    opacity: o.5;
+}
+.text5:link  {
+    color :#2e2d2c
+ }
+ .text5:hover {
+     color:#f0f
+    
+ }
+ .text5:hover {
+     cursor:pointer;
+ }
+
+a{
+    text-decoration: none;
+    margin:0 auto;
+    display: block;
+    width:600px;
+}
+.text6{
+    width :440px;
+    height:200px;
+    border:1px solid #ccc;
+    background-color: #ccc;
+    margin-right: 6px;
+    position:static ;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    font-family: Helvetica,sans-serif;
+    clear: both;
+    font-weight: 600;
+    color: var(--dgrey);
+    text-shadow:0 0 3px #2e2d2c;
+    resize: none;
+    outline: none;
+    margin-left: 3px;
+}
+.text6:link  {
+    color :#2e2d2c
+ }
+ .text6:hover {
+     color:#f0f
+    
+ }
+ .text6:hover {
+     cursor:pointer;
+ }
+.sul{
+	margin-top: 300px;
+	width: 1920px;
+	height: 350px
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+#square {
+  width: 1410px;
+  height: 400px;
+  background: #2e2d2c;
+border-radius: 10px;
+
+position: absolute;
+margin-left: 8px;
+z-index: 1;
+display: flex;
+}
+.squareone{
+	width: 340px;
+	height: 400px;
+	color: white;
+	margin: auto;
+}
+.squareone p{
+	
+	line-height: 2.2em;
+}
+
+#square2 {
+    width: 350px;
+    height: 30px;
+    background: #ccc;
+  border-radius: 12px;
+  margin-top: 10px;
+/*  margin-left: 1000px;
+  margin-top: 20px;
+  margin-right: 800px ;
+  text-align: center;
+  position: absolute;
+  margin-left: 8px;*/
+  z-index: 2;
+  }
+  
+#square3 {
+    width: 300px;
+    height: 30px;
+    background: #ccc;
+  border-radius: 12px;
+  margin-left: 1000px;
+  margin-top: 20px;
+  margin-right: 800px ;
+  text-align: center;
+  position: absolute;
+  margin-left: 8px;
+  z-index: 2;
+  }
+
+body {
+	cursor: url('mouse.png'), default;
+}
